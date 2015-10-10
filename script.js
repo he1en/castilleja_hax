@@ -1,12 +1,18 @@
-castiHax.initTeam('Ian&Sierra', function(){
+castiHax.initTeam('Charlotte', function(){
 
-	castiHax.set({hello: 'worldyyy'}, function(err){
+var numreminders = 0
+  $('#submit').on('click', function(){
+    numreminders += 1
+    var input = $('#reminder').val()
+    console.log(input);
+    castiHax.set({reminder: input});
 
-	});
-	$('#submit').on('click', function(){
-		console.log($('#email').val());
-		castiHax.set({email: $('#email').val()});
-	})
+    var reminderFromDatabase = "";
+    castiHax.get("reminder", function (output) { $('#label' + numreminders).text(output); });
+//label').text(reminderFromDatabase);
+
+  // $('#reminder').on('click', function(){
+  //  console.log($('#reminder').val());
+  });
 
 });
-

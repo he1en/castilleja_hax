@@ -1,0 +1,30 @@
+#schedule {
+  height: 3in;
+}
+
+.checklist{
+	font-size: 20px;
+
+/*	ul{
+	margin:0*/
+}
+	li {
+		list-style-type: none;
+	}
+
+.reminders{width:500px;
+margin:auto;}
+
+.bridget {
+  display: inline;
+}
+.olivia {
+ display: inline;
+}
+
+.charlotte {
+ display: inline;
+}
+	
+
+
